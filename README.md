@@ -117,10 +117,6 @@ This project is intended for educational and personal learning purposes only. It
 
 Pull requests and suggestions are welcome! Open an issue to discuss what you’d like to change.
 
----
 
-```
-
----
 
 
