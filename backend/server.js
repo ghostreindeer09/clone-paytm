@@ -21,12 +21,26 @@ const authRoutes = require('./routes/auth');
 const walletRoutes = require('./routes/wallet');
 const transactionRoutes = require('./routes/transaction');
 const userRoutes = require('./routes/user');
+const billRoutes = require('./routes/bill');
+const entertainmentRoutes = require('./routes/entertainment');
+const mobileRoutes = require('./routes/mobile');
+const serviceRoutes = require('./routes/service');
+const shoppingRoutes = require('./routes/shopping');
+const financialRoutes = require('./routes/financial');
+const digitalRoutes = require('./routes/digital');
 
 // Wire each route with a base API path
 app.use('/auth', authRoutes);               // Register, login, etc.
 app.use('/wallet', walletRoutes);           // Add/pay, wallet actions
 app.use('/transactions', transactionRoutes); // View transaction history
 app.use('/user', userRoutes);               // User profile endpoints
+app.use('/bills', billRoutes);
+app.use('/entertainment', entertainmentRoutes);
+app.use('/mobile', mobileRoutes);
+app.use('/services', serviceRoutes);
+app.use('/shopping', shoppingRoutes);
+app.use('/financial', financialRoutes);
+app.use('/digital', digitalRoutes);
 
 const PORT = process.env.PORT || 5000;
 
