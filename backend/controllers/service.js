@@ -29,5 +29,5 @@ exports.getServiceBookings = async (req, res) => {
 // Mock function simulating an external service booking API
 async function mockServiceApi(service) {
   await new Promise(resolve => setTimeout(resolve, 500));
-  return { success: Math.random() > 0.1 };
+  return { success: true };
 }

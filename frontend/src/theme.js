@@ -3,11 +3,11 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#0052cc', // Vibrant Blue
+      main: '#002e6e', // Paytm Blue
       contrastText: '#fff',
     },
     secondary: {
-      main: '#00c6ae', // Teal Accent
+      main: '#00c6ae', // Paytm Teal
       contrastText: '#fff',
     },
     background: {
@@ -21,7 +21,7 @@ const theme = createTheme({
       main: '#ffb300',
     },
     info: {
-      main: '#3f51b5',
+      main: '#2196f3',
     },
     success: {
       main: '#00c853',
@@ -32,9 +32,11 @@ const theme = createTheme({
       lightSilver: '#e0e6ed',
       gold: '#ffd700',
       coral: '#ff6f61',
+      paytmBlue: '#002e6e',
+      paytmTeal: '#00c6ae',
     },
     text: {
-      primary: '#1a2233',
+      primary: '#002e6e',
       secondary: '#657e98',
       disabled: '#b4bdc6',
     },
@@ -50,29 +52,29 @@ const theme = createTheme({
     button: { textTransform: 'none', fontWeight: 600 },
   },
   shape: {
-    borderRadius: 18,
+    borderRadius: 12,
   },
   shadows: [
     'none',
-    '0px 2px 8px 0px rgba(0,82,204,0.08)',
+    '0px 2px 8px 0px rgba(0,46,110,0.08)',
     '0px 4px 16px 0px rgba(0,198,174,0.10)',
-    ...Array(23).fill('0px 2px 8px 0px rgba(26,34,51,0.06)')
+    ...Array(23).fill('0px 2px 8px 0px rgba(0,46,110,0.06)')
   ],
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 12,
+          borderRadius: 8,
           fontWeight: 600,
-          boxShadow: '0px 2px 8px 0px rgba(0,82,204,0.08)',
+          boxShadow: '0px 2px 8px 0px rgba(0,46,110,0.08)',
         },
       },
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          borderRadius: 18,
-          boxShadow: '0px 4px 24px 0px rgba(0,82,204,0.10)',
+          borderRadius: 12,
+          boxShadow: '0px 4px 24px 0px rgba(0,46,110,0.10)',
         },
       },
     },

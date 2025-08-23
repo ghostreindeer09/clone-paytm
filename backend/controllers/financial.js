@@ -29,5 +29,5 @@ exports.getFinancialPayments = async (req, res) => {
 // Mock function simulating an external financial payment API
 async function mockFinancialApi(payment) {
   await new Promise(resolve => setTimeout(resolve, 500));
-  return { success: Math.random() > 0.1 };
+  return { success: true };
 }

@@ -18,7 +18,10 @@ const Pay = () => {
       await axios.post('/api/wallet/pay', { recipientEmail, amount: Number(amount) }, { headers: { Authorization: `Bearer ${token}` } });
       navigate('/dashboard');
     } catch (err) {
-      setError('Payment failed. Please try again.');
+      setError(err.response?.data?.msg || 'Payment failed. Please try again.');
+      console.error('Payment error:', err);
+      console.log('Error response data:', err.response?.data);
+      console.log('Error status:', err.response?.status);
     }
   };
 

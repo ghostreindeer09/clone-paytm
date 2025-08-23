@@ -29,5 +29,5 @@ exports.getRecharges = async (req, res) => {
 // Mock function simulating an external recharge API
 async function mockRechargeApi(recharge) {
   await new Promise(resolve => setTimeout(resolve, 500));
-  return { success: Math.random() > 0.1 };
+  return { success: true };
 }

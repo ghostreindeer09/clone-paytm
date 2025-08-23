@@ -46,6 +46,6 @@ exports.payBill = async (req, res) => {
 async function mockBillPaymentApi(bill) {
   // Simulate network delay
   await new Promise(resolve => setTimeout(resolve, 500));
-  // Simulate random success/failure
-  return { success: Math.random() > 0.1 };
+  // Always return success
+  return { success: true };
 }

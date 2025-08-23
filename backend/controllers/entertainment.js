@@ -42,5 +42,5 @@ exports.cancelBooking = async (req, res) => {
 // Mock function simulating an external booking API
 async function mockBookingApi(booking) {
   await new Promise(resolve => setTimeout(resolve, 500));
-  return { success: Math.random() > 0.1 };
+  return { success: true };
 }

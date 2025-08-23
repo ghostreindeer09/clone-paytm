@@ -29,5 +29,5 @@ exports.getOrders = async (req, res) => {
 // Mock function simulating an external order API
 async function mockOrderApi(order) {
   await new Promise(resolve => setTimeout(resolve, 500));
-  return { success: Math.random() > 0.1 };
+  return { success: true };
 }
